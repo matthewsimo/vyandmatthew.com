@@ -1,0 +1,124 @@
+@import "compass";
+@import "normalize";
+
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  *behavior:url("/assets/css/boxsizing.htc");
+  background-repeat:no-repeat;
+  position:relative;
+}
+
+img {
+  max-width:100%;height:auto;
+}
+
+body, #main-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix {
+  zoom: 1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+nav {
+
+  ul, ol {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+    }
+  }
+}
+
+/* @group Header */
+
+#main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3em;
+  background: rgba(255,255,255,.9);
+  z-index: 10;
+  font-size: 2em;
+
+  nav {
+    width: 80%;
+    margin: .65em auto 0;
+    text-align: center;
+
+    li {
+      padding: 5px;
+    }
+  }
+
+}
+
+/* end @group Header */
+
+
+.panel {
+  position: fixed;
+  background: rgb(235,235,235);
+  width: 100%;
+  height: 100%;
+  padding: 6em 10% 10%;
+
+  > header {
+    text-align: center;
+  }
+}
+
+
+/* @group Containers */
+
+.container-group {
+  @extend .clearfix;
+}
+
+.full-container, .half-container {
+  position: relative;
+}
+
+.full-container {
+  width: 100%;
+}
+
+.half-container {
+  width: 50%;
+  float: left;
+  
+  &:first-child {
+    padding-right: 2%;
+  }
+
+  &:last-child {
+    padding-left: 2%;
+  }
+}
+
+/* end @group Containers */
+
+#the-couple,
+#wedding-party,
+#ceremony,
+#registry {
+  display: none;
+}
+

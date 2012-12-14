@@ -32,10 +32,10 @@ module.exports = function( grunt ) {
       dist: {
         // http://compass-style.org/help/tutorials/configuration-reference/#configuration-properties
         options: {
-          css_dir: 'temp/styles',
-          sass_dir: 'app/styles',
-          images_dir: 'app/images',
-          javascripts_dir: 'temp/scripts',
+          css_dir: 'app/assets/css',
+          sass_dir: 'app/assets/scss',
+          images_dir: 'app/assets/img',
+          javascripts_dir: 'app/assets/js',
           force: true
         }
       }
@@ -59,16 +59,14 @@ module.exports = function( grunt ) {
       },
       compass: {
         files: [
-          'app/styles/**/*.{scss,sass}'
+          'app/assets/scss/**/*.{scss,sass}'
         ],
         tasks: 'compass reload'
       },
       reload: {
         files: [
           'app/*.html',
-          'app/styles/**/*.css',
-          'app/scripts/**/*.js',
-          'app/images/**/*'
+          'app/assets/**/*'
         ],
         tasks: 'reload'
       }
@@ -79,7 +77,7 @@ module.exports = function( grunt ) {
     lint: {
       files: [
         'Gruntfile.js',
-        'app/scripts/**/*.js',
+        'app/assets/js/**/*.js',
         'spec/**/*.js'
       ]
     },

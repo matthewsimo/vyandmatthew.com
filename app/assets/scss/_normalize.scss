@@ -1,11 +1,13 @@
-/* normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-03-11T12:53 UTC - http://github.com/necolas/normalize.css */
+
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
+
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
  */
-/* line 21, ../scss/_normalize.scss */
+
 article,
 aside,
 details,
@@ -17,354 +19,354 @@ hgroup,
 nav,
 section,
 summary {
-  display: block;
+    display: block;
 }
 
 /*
  * Corrects inline-block display not defined in IE6/7/8/9 & FF3
  */
-/* line 31, ../scss/_normalize.scss */
+
 audio,
 canvas,
 video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
 
 /*
  * Prevents modern browsers from displaying 'audio' without controls
  * Remove excess height in iOS5 devices
  */
-/* line 42, ../scss/_normalize.scss */
+
 audio:not([controls]) {
-  display: none;
-  height: 0;
+    display: none;
+    height: 0;
 }
 
 /*
  * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
  * Known issue: no IE6 support
  */
-/* line 52, ../scss/_normalize.scss */
+
 [hidden] {
-  display: none;
+    display: none;
 }
+
 
 /* =============================================================================
    Base
    ========================================================================== */
+
 /*
  * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
  *    http://clagnut.com/blog/348/#c790
  * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
-/* line 68, ../scss/_normalize.scss */
+
 html {
-  font-size: 100%;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
 }
 
 /*
  * Addresses font-family inconsistency between 'textarea' and other form elements.
  */
-/* line 82, ../scss/_normalize.scss */
+
 html,
 button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 /*
  * Addresses margins handled incorrectly in IE6/7
  */
-/* line 90, ../scss/_normalize.scss */
+
 body {
-  margin: 0;
+    margin: 0;
 }
+
 
 /* =============================================================================
    Links
    ========================================================================== */
+
 /*
  * Addresses outline displayed oddly in Chrome
  */
-/* line 103, ../scss/_normalize.scss */
+
 a:focus {
-  outline: thin dotted;
+    outline: thin dotted;
 }
 
 /*
  * Improves readability when focused and also mouse hovered in all browsers
  * people.opera.com/patrickl/experiments/keyboard/test
  */
-/* line 113, ../scss/_normalize.scss */
+
 a:hover,
 a:active {
-  outline: 0;
+    outline: 0;
 }
+
 
 /* =============================================================================
    Typography
    ========================================================================== */
+
 /*
  * Addresses font sizes and margins set differently in IE6/7
  * Addresses font sizes within 'section' and 'article' in FF4+, Chrome, S5
  */
-/* line 127, ../scss/_normalize.scss */
+
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
-/* line 132, ../scss/_normalize.scss */
 h2 {
-  font-size: 1.5em;
-  margin: 0.83em 0;
+    font-size: 1.5em;
+    margin: 0.83em 0;
 }
 
-/* line 137, ../scss/_normalize.scss */
 h3 {
-  font-size: 1.17em;
-  margin: 1em 0;
+    font-size: 1.17em;
+    margin: 1em 0;
 }
 
-/* line 142, ../scss/_normalize.scss */
 h4 {
-  font-size: 1em;
-  margin: 1.33em 0;
+    font-size: 1em;
+    margin: 1.33em 0;
 }
 
-/* line 147, ../scss/_normalize.scss */
 h5 {
-  font-size: 0.83em;
-  margin: 1.67em 0;
+    font-size: 0.83em;
+    margin: 1.67em 0;
 }
 
-/* line 152, ../scss/_normalize.scss */
 h6 {
-  font-size: 0.75em;
-  margin: 2.33em 0;
+    font-size: 0.75em;
+    margin: 2.33em 0;
 }
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
  */
-/* line 161, ../scss/_normalize.scss */
+
 abbr[title] {
-  border-bottom: 1px dotted;
+    border-bottom: 1px dotted;
 }
 
 /*
  * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
 */
-/* line 170, ../scss/_normalize.scss */
+
 b,
 strong {
-  font-weight: bold;
+    font-weight: bold;
 }
 
-/* line 174, ../scss/_normalize.scss */
 blockquote {
-  margin: 1em 40px;
+    margin: 1em 40px;
 }
 
 /*
  * Addresses styling not present in S5, Chrome
  */
-/* line 182, ../scss/_normalize.scss */
+
 dfn {
-  font-style: italic;
+    font-style: italic;
 }
 
 /*
  * Addresses styling not present in IE6/7/8/9
  */
-/* line 190, ../scss/_normalize.scss */
+
 mark {
-  background: #ff0;
-  color: #000;
+    background: #ff0;
+    color: #000;
 }
 
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 200, ../scss/_normalize.scss */
+
 p,
 pre {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 
 /*
  * Corrects font family set oddly in IE6, S4/5, Chrome
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 212, ../scss/_normalize.scss */
+
 pre,
 code,
 kbd,
 samp {
-  font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
-  font-size: 1em;
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
 }
 
 /*
  * Improves readability of pre-formatted text in all browsers
  */
-/* line 222, ../scss/_normalize.scss */
+
 pre {
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 /*
  * 1. Addresses CSS quotes not supported in IE6/7
  * 2. Addresses quote property not supported in S4
  */
+
 /* 1 */
-/* line 235, ../scss/_normalize.scss */
+
 q {
-  quotes: none;
+    quotes: none;
 }
 
 /* 2 */
-/* line 242, ../scss/_normalize.scss */
+
 q:before,
 q:after {
-  content: '';
-  content: none;
+    content: '';
+    content: none;
 }
 
-/* line 247, ../scss/_normalize.scss */
 small {
-  font-size: 75%;
+    font-size: 75%;
 }
 
 /*
  * Prevents sub and sup affecting line-height in all browsers
  * gist.github.com/413930
  */
-/* line 257, ../scss/_normalize.scss */
+
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
-/* line 264, ../scss/_normalize.scss */
 sup {
-  top: -0.5em;
+    top: -0.5em;
 }
 
-/* line 268, ../scss/_normalize.scss */
 sub {
-  bottom: -0.25em;
+    bottom: -0.25em;
 }
+
 
 /* =============================================================================
    Lists
    ========================================================================== */
+
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 284, ../scss/_normalize.scss */
+
 dl,
 menu,
 ol,
 ul {
-  margin: 1em 0;
+    margin: 1em 0;
 }
 
-/* line 288, ../scss/_normalize.scss */
 dd {
-  margin: 0 0 0 40px;
+    margin: 0 0 0 40px;
 }
 
 /*
  * Addresses paddings set differently in IE6/7
  */
-/* line 298, ../scss/_normalize.scss */
+
 menu,
 ol,
 ul {
-  padding: 0 0 0 40px;
+    padding: 0 0 0 40px;
 }
 
 /*
  * Corrects list images handled incorrectly in IE7
  */
-/* line 307, ../scss/_normalize.scss */
+
 nav ul,
 nav ol {
-  list-style: none;
-  list-style-image: none;
+    list-style: none;
+    list-style-image: none;
 }
+
 
 /* =============================================================================
    Embedded content
    ========================================================================== */
+
 /*
  * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
  * 2. Improves image quality when scaled in IE7
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 323, ../scss/_normalize.scss */
+
 img {
-  border: 0;
-  /* 1 */
-  -ms-interpolation-mode: bicubic;
-  /* 2 */
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
 }
 
 /*
  * Corrects overflow displayed oddly in IE9
  */
-/* line 332, ../scss/_normalize.scss */
+
 svg:not(:root) {
-  overflow: hidden;
+    overflow: hidden;
 }
+
 
 /* =============================================================================
    Figures
    ========================================================================== */
+
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11
  */
-/* line 345, ../scss/_normalize.scss */
+
 figure {
-  margin: 0;
+    margin: 0;
 }
+
 
 /* =============================================================================
    Forms
    ========================================================================== */
+
 /*
  * Corrects margin displayed oddly in IE6/7
  */
-/* line 358, ../scss/_normalize.scss */
+
 form {
-  margin: 0;
+    margin: 0;
 }
 
 /*
  * Define consistent border, margin, and padding
  */
-/* line 366, ../scss/_normalize.scss */
+
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
 }
 
 /*
@@ -372,15 +374,12 @@ fieldset {
  * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
-/* line 378, ../scss/_normalize.scss */
+
 legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  white-space: normal;
-  /* 2 */
-  *margin-left: -7px;
-  /* 3 */
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
 }
 
 /*
@@ -388,29 +387,24 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
  * 3. Improves appearance and consistency in all browsers
  */
-/* line 394, ../scss/_normalize.scss */
+
 button,
 input,
 select,
 textarea {
-  font-size: 100%;
-  /* 1 */
-  margin: 0;
-  /* 2 */
-  vertical-align: baseline;
-  /* 3 */
-  *vertical-align: middle;
-  /* 3 */
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
 }
 
 /*
  * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
  */
-/* line 406, ../scss/_normalize.scss */
+
 button,
 input {
-  line-height: normal;
-  /* 1 */
+    line-height: normal; /* 1 */
 }
 
 /*
@@ -419,26 +413,23 @@ input {
  * 3. Removes inner spacing in IE7 without affecting normal text inputs
  *    Known issue: inner spacing remains in IE6
  */
-/* line 420, ../scss/_normalize.scss */
+
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer;
-  /* 1 */
-  -webkit-appearance: button;
-  /* 2 */
-  *overflow: visible;
-  /* 3 */
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+    *overflow: visible;  /* 3 */
 }
 
 /*
  * Re-set default cursor for disabled elements
  */
-/* line 431, ../scss/_normalize.scss */
+
 button[disabled],
 input[disabled] {
-  cursor: default;
+    cursor: default;
 }
 
 /*
@@ -447,193 +438,67 @@ input[disabled] {
  * 3. Removes excess padding in IE7
       Known issue: excess padding remains in IE6
  */
-/* line 443, ../scss/_normalize.scss */
+
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-  *height: 13px;
-  /* 3 */
-  *width: 13px;
-  /* 3 */
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
 }
 
 /*
  * 1. Addresses appearance set to searchfield in S5, Chrome
  * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
  */
-/* line 455, ../scss/_normalize.scss */
+
 input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box;
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
 }
 
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X
  */
-/* line 467, ../scss/_normalize.scss */
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 /*
  * Removes inner padding and border in FF3+
  * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
  */
-/* line 477, ../scss/_normalize.scss */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 /*
  * 1. Removes default vertical scrollbar in IE6/7/8/9
  * 2. Improves readability and alignment in all browsers
  */
-/* line 487, ../scss/_normalize.scss */
+
 textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
 }
+
 
 /* =============================================================================
    Tables
    ========================================================================== */
+
 /*
  * Remove most spacing between table cells
  */
-/* line 501, ../scss/_normalize.scss */
+
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 4, ../scss/main.scss */
-* {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  *behavior: url("/assets/css/boxsizing.htc");
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-/* line 12, ../scss/main.scss */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 16, ../scss/main.scss */
-body, #main-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 22, ../scss/main.scss */
-.clearfix, .container-group {
-  zoom: 1;
-}
-/* line 24, ../scss/main.scss */
-.clearfix:before, .container-group:before, .clearfix:after, .container-group:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
-}
-/* line 30, ../scss/main.scss */
-.clearfix:after, .container-group:after {
-  clear: both;
-}
-
-/* line 38, ../scss/main.scss */
-nav ul, nav ol {
-  margin: 0;
-  padding: 0;
-}
-/* line 42, ../scss/main.scss */
-nav ul li, nav ol li {
-  display: inline-block;
-}
-
-/* @group Header */
-/* line 50, ../scss/main.scss */
-#main-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 3em;
-  background: rgba(255, 255, 255, 0.9);
-  z-index: 10;
-  font-size: 2em;
-}
-/* line 61, ../scss/main.scss */
-#main-header nav {
-  width: 80%;
-  margin: .65em auto 0;
-  text-align: center;
-}
-/* line 66, ../scss/main.scss */
-#main-header nav li {
-  padding: 5px;
-}
-
-/* end @group Header */
-/* line 76, ../scss/main.scss */
-.panel {
-  position: fixed;
-  background: #ebebeb;
-  width: 100%;
-  height: 100%;
-  padding: 6em 10% 10%;
-}
-/* line 83, ../scss/main.scss */
-.panel > header {
-  text-align: center;
-}
-
-/* @group Containers */
-/* line 95, ../scss/main.scss */
-.full-container, .half-container {
-  position: relative;
-}
-
-/* line 99, ../scss/main.scss */
-.full-container {
-  width: 100%;
-}
-
-/* line 103, ../scss/main.scss */
-.half-container {
-  width: 50%;
-  float: left;
-}
-/* line 107, ../scss/main.scss */
-.half-container:first-child {
-  padding-right: 2%;
-}
-/* line 111, ../scss/main.scss */
-.half-container:last-child {
-  padding-left: 2%;
-}
-
-/* end @group Containers */
-/* line 121, ../scss/main.scss */
-#the-couple,
-#wedding-party,
-#ceremony,
-#registry {
-  display: none;
+    border-collapse: collapse;
+    border-spacing: 0;
 }

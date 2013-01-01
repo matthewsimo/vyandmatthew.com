@@ -534,106 +534,168 @@ img {
 }
 
 /* line 16, ../scss/main.scss */
-body, #main-content {
+body {
   position: relative;
   width: 100%;
   height: 100%;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15em;
+  color: #6f6f6f;
 }
 
-/* line 22, ../scss/main.scss */
+/* line 25, ../scss/main.scss */
 .clearfix, .container-group {
   zoom: 1;
 }
-/* line 24, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 .clearfix:before, .container-group:before, .clearfix:after, .container-group:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-/* line 30, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
 .clearfix:after, .container-group:after {
   clear: both;
 }
 
 /* line 38, ../scss/main.scss */
+h1 {
+  font-size: 2.75em;
+  font-weight: 400;
+}
+
+/* line 45, ../scss/main.scss */
+nav {
+  font-family: "proxima-nova",sans-serif;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+}
+/* line 50, ../scss/main.scss */
 nav ul, nav ol {
   margin: 0;
   padding: 0;
 }
-/* line 42, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
 nav ul li, nav ol li {
   display: inline-block;
+  letter-spacing: -0.03em;
+}
+/* line 60, ../scss/main.scss */
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #6f6f6f;
 }
 
 /* @group Header */
-/* line 50, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 #main-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 3em;
-  background: rgba(255, 255, 255, 0.9);
+  height: auto;
+  background: white;
   z-index: 10;
-  font-size: 2em;
+  font-size: 1.1em;
+  border-bottom: 2px solid #c8c8c8;
 }
-/* line 61, ../scss/main.scss */
+/* line 81, ../scss/main.scss */
 #main-header nav {
   width: 80%;
-  margin: .65em auto 0;
+  margin: .8em auto 1.2em;
   text-align: center;
 }
-/* line 66, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 #main-header nav li {
-  padding: 5px;
+  padding: 0 1em;
+}
+/* line 89, ../scss/main.scss */
+#main-header nav li a {
+  display: block;
+  line-height: 2em;
+}
+/* line 93, ../scss/main.scss */
+#main-header nav li a:hover {
+  text-decoration: underline;
+}
+/* line 99, ../scss/main.scss */
+#main-header nav li:first-child img {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
 }
 
 /* end @group Header */
-/* line 76, ../scss/main.scss */
-.panel {
-  position: fixed;
-  background: #ebebeb;
-  width: 100%;
-  height: 100%;
-  padding: 6em 10% 10%;
-}
-/* line 83, ../scss/main.scss */
-.panel > header {
-  text-align: center;
-}
-
 /* @group Containers */
-/* line 95, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 .full-container, .half-container {
   position: relative;
 }
 
-/* line 99, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 .full-container {
   width: 100%;
 }
 
-/* line 103, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 .half-container {
   width: 50%;
   float: left;
 }
-/* line 107, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 .half-container:first-child {
   padding-right: 2%;
 }
-/* line 111, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 .half-container:last-child {
   padding-left: 2%;
 }
 
 /* end @group Containers */
-/* line 121, ../scss/main.scss */
-#the-couple,
-#wedding-party,
-#ceremony,
+/* @group Slide styles */
+/* line 145, ../scss/main.scss */
+.panel {
+  position: fixed;
+  overflow: hidden;
+  background: #ebebeb;
+  width: 100%;
+  height: 100%;
+  padding: 6em 10% 10%;
+  -webkit-box-shadow: #6f6f6f 0 0 10px;
+  -moz-box-shadow: #6f6f6f 0 0 10px;
+  box-shadow: #6f6f6f 0 0 10px;
+}
+/* line 154, ../scss/main.scss */
+.panel > header {
+  text-align: center;
+}
+
+/* line 161, ../scss/main.scss */
+#our-story {
+  z-index: 5;
+}
+
+/* line 165, ../scss/main.scss */
+#the-couple {
+  z-index: 4;
+  background: #4d4d4d;
+}
+
+/* line 170, ../scss/main.scss */
+#wedding-party {
+  z-index: 3;
+  background: #fddf67;
+}
+
+/* line 175, ../scss/main.scss */
+#ceremony {
+  z-index: 2;
+}
+
+/* line 179, ../scss/main.scss */
 #registry {
-  display: none;
+  z-index: 1;
 }

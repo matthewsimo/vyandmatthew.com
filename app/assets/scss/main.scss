@@ -13,10 +13,13 @@ img {
   max-width:100%;height:auto;
 }
 
-body, #main-content {
+body{
   position: relative;
   width: 100%;
   height: 100%;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15em;
+  color: rgb(111,111,111);
 }
 
 .clearfix {
@@ -32,8 +35,17 @@ body, #main-content {
   }
 }
 
+h1 {
+  font-size: 2.75em;
+  font-weight: 400;
+}
+
+
 
 nav {
+  font-family: "proxima-nova",sans-serif;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
 
   ul, ol {
     margin: 0;
@@ -41,30 +53,54 @@ nav {
 
     li {
       display: inline-block;
+      letter-spacing: -0.03em;
     }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(111,111,111);
   }
 }
 
 /* @group Header */
 
 #main-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 3em;
-  background: rgba(255,255,255,.9);
+  height: auto;
+  background: rgb(255,255,255);
   z-index: 10;
-  font-size: 2em;
+  font-size: 1.1em;
+  border-bottom: 2px solid rgb(200,200,200);
 
   nav {
     width: 80%;
-    margin: .65em auto 0;
+    margin: .8em auto 1.2em;
     text-align: center;
 
     li {
-      padding: 5px;
+      padding: 0 1em;
+
+      a {
+        display: block;
+        line-height: 2em;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+
+      &:first-child img {
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+      }
     }
   }
 
@@ -72,18 +108,6 @@ nav {
 
 /* end @group Header */
 
-
-.panel {
-  position: fixed;
-  background: rgb(235,235,235);
-  width: 100%;
-  height: 100%;
-  padding: 6em 10% 10%;
-
-  > header {
-    text-align: center;
-  }
-}
 
 
 /* @group Containers */
@@ -115,10 +139,43 @@ nav {
 
 /* end @group Containers */
 
-#the-couple,
-#wedding-party,
-#ceremony,
-#registry {
-  display: none;
+
+/* @group Slide styles */
+
+.panel {
+  position: fixed;
+  overflow: hidden;
+  background: rgb(235,235,235);
+  width: 100%;
+  height: 100%;
+  padding: 6em 10% 10%;
+  @include box-shadow( rgb(111,111,111) 0 0 10px);
+
+  > header {
+    text-align: center;
+  }
 }
 
+
+
+#our-story {
+  z-index: 5;
+}
+
+#the-couple {
+  z-index: 4;
+  background: rgb(77,77,77);
+}
+
+#wedding-party {
+  z-index: 3;
+  background: rgb(253,223,103);
+}
+
+#ceremony {
+  z-index: 2;
+}
+
+#registry {
+  z-index: 1;
+}

@@ -664,38 +664,111 @@ nav a {
   width: 100%;
   height: 100%;
   padding: 6em 10% 10%;
+  z-index: 1;
+  display: none;
   -webkit-box-shadow: #6f6f6f 0 0 10px;
   -moz-box-shadow: #6f6f6f 0 0 10px;
   box-shadow: #6f6f6f 0 0 10px;
 }
-/* line 154, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .panel > header {
   text-align: center;
 }
 
-/* line 161, ../scss/main.scss */
-#our-story {
+/* line 163, ../scss/main.scss */
+#announcing {
   z-index: 5;
+  display: block;
 }
-
-/* line 165, ../scss/main.scss */
-#the-couple {
-  z-index: 4;
-  background: #4d4d4d;
+/* line 167, ../scss/main.scss */
+#announcing h1 {
+  margin: 20px 0 .3em 0;
 }
-
 /* line 170, ../scss/main.scss */
+#announcing h1 .char9 {
+  color: #fddf68;
+  font-size: 1.2em !important;
+}
+/* line 176, ../scss/main.scss */
+#announcing p {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: lighter;
+  margin-top: 0;
+}
+/* line 183, ../scss/main.scss */
+#announcing .button {
+  display: block;
+  padding: .5em 1em;
+  background: white;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: lighter;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #6f6f6f;
+}
+
+/* line 198, ../scss/main.scss */
+#the-couple {
+  background: #4d4d4d url("/assets/img/about-background.png") no-repeat top right fixed;
+}
+/* line 201, ../scss/main.scss */
+#the-couple h1 {
+  padding-top: 100px;
+  background: transparent url("/assets/img/flourish-about.png") no-repeat top center scroll;
+  color: #fddf68;
+  margin-top: 0;
+}
+/* line 208, ../scss/main.scss */
+#the-couple article {
+  font-size: 1em;
+  font-weight: lighter;
+  line-height: 1.7em;
+  color: #f1f1f1;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 219, ../scss/main.scss */
 #wedding-party {
-  z-index: 3;
   background: #fddf67;
 }
-
-/* line 175, ../scss/main.scss */
-#ceremony {
-  z-index: 2;
+/* line 222, ../scss/main.scss */
+#wedding-party h1 {
+  padding-top: 120px;
+  background: transparent url("/assets/img/flourish-wedding-party.png") no-repeat top center scroll;
+  color: #535353;
 }
 
-/* line 179, ../scss/main.scss */
+/* line 230, ../scss/main.scss */
+#ceremony {
+  background: #757575;
+}
+/* line 233, ../scss/main.scss */
+#ceremony h1 {
+  padding-top: 120px;
+  background: transparent url("/assets/img/flourish-ceremony.png") no-repeat top center scroll;
+  color: #fddf68;
+}
+
+/* line 241, ../scss/main.scss */
 #registry {
-  z-index: 1;
+  background: #ebebeb;
+  color: #3e3e3e;
+}
+/* line 245, ../scss/main.scss */
+#registry h4 {
+  padding-bottom: 90px;
+  text-align: center;
+  font-family: "proxima-nova",sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  background: transparent url("/assets/img/flourish-registry.png") no-repeat bottom center scroll;
 }

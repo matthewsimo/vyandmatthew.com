@@ -149,6 +149,8 @@ nav {
   width: 100%;
   height: 100%;
   padding: 6em 10% 10%;
+  z-index: 1;
+  display: none;
   @include box-shadow( rgb(111,111,111) 0 0 10px);
 
   > header {
@@ -158,24 +160,95 @@ nav {
 
 
 
-#our-story {
-  z-index: 5;
+#announcing {
+  z-index:5;
+  display: block;
+
+  h1 {
+    margin: 20px 0 .3em 0;
+
+    .char9 {
+      color: rgb(253,223,104);
+      font-size: 1.2em !important;
+    }
+  }
+
+  p {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0;
+  }
+
+  .button {
+    display: block;
+    padding: .5em 1em;
+    background: rgb(255,255,255);
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: lighter;
+    @include border-radius(3px);
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(111,111,111);
+  }
 }
 
 #the-couple {
-  z-index: 4;
-  background: rgb(77,77,77);
+  background: rgb(77,77,77) url("/assets/img/about-background.png") no-repeat top right fixed;
+
+  h1 {
+    padding-top: 100px;
+    background: transparent url("/assets/img/flourish-about.png") no-repeat top center scroll;
+    color: rgb(253,223,104);
+    margin-top: 0;
+  } 
+
+  article {
+    font-size: 1em;
+    font-weight: lighter;
+    line-height: 1.7em;
+    color: rgb(241,241,241);
+    width: 75%;
+    margin: 0 auto;
+  }
+
 }
 
 #wedding-party {
-  z-index: 3;
   background: rgb(253,223,103);
+
+  h1 {
+    padding-top: 120px;
+    background: transparent url("/assets/img/flourish-wedding-party.png") no-repeat top center scroll;
+    color: rgb(83,83,83);
+  }
+
 }
 
 #ceremony {
-  z-index: 2;
+  background: rgb(117,117,117);
+
+  h1 {
+    padding-top: 120px;
+    background: transparent url("/assets/img/flourish-ceremony.png") no-repeat top center scroll;
+    color: rgb(253,223,104);
+  }
+
 }
 
 #registry {
-  z-index: 1;
+  background: rgb(235,235,235);
+  color: rgb(62,62,62);
+
+  h4 {
+    padding-bottom: 90px;
+    text-align: center;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    background: transparent url("/assets/img/flourish-registry.png") no-repeat bottom center scroll;
+  }
+
 }

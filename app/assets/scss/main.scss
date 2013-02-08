@@ -80,7 +80,7 @@ nav {
 
   nav {
     width: 80%;
-    margin: .8em auto 1.2em;
+    margin: .9em auto .8em;
     text-align: center;
 
     li {
@@ -156,6 +156,10 @@ nav {
   > header {
     text-align: center;
   }
+
+  h1 {
+    margin-top: 0;
+  }
 }
 
 
@@ -165,7 +169,8 @@ nav {
   display: block;
 
   h1 {
-    margin: 20px 0 .3em 0;
+    margin: 0 0 .4em 0;
+    line-height: 0.85;
 
     .char9 {
       color: rgb(253,223,104);
@@ -206,7 +211,7 @@ nav {
   } 
 
   article {
-    font-size: 1em;
+    font-size: 1.15em;
     font-weight: lighter;
     line-height: 1.7em;
     color: rgb(241,241,241);
@@ -223,7 +228,93 @@ nav {
     padding-top: 120px;
     background: transparent url("/assets/img/flourish-wedding-party.png") no-repeat top center scroll;
     color: rgb(83,83,83);
+    margin-bottom: .25em;
   }
+
+  nav.tabs {
+    text-align: center;
+    ul {
+      font-size: 0;
+    }
+
+    li {
+      padding: 8px 10px 4px;
+      margin: 0;
+      font-size: 14px;
+      border-bottom: 1px solid rgb(83,83,83);
+      width: 70px;
+      text-align: left;
+    }
+
+    li:first-child {
+      border-right: 1px solid rgb(83,83,83);
+      text-align: right;
+    }
+
+    a {
+      opacity: .8;
+
+      &.active, &:hover {
+        color: rgb(83,83,83);
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+  ol {
+    @extend .clearfix;
+    list-style: none;
+    padding: 0;
+
+    &#his {
+      display: none;
+    }
+
+    li {
+      width: 23%;
+      height: auto;
+      float: left;
+      margin: 1%;
+
+      img {
+        max-width: 280px;
+        max-height: 280px;
+        width: 100%;
+        height: auto;
+        border: 10px solid white;
+        @include border-radius(3px);
+        cursor: pointer;
+      }
+
+      > div {
+        display: none;
+
+        font-family: "proxima-nova",sans-serif;
+        font-weight: lighter;
+        padding: 10px;
+        width: auto;
+        overflow: visible;
+
+      }
+
+      h2, h3 {
+        font-size: 1.4em;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
+
+
+    }
+
+  }
+
 
 }
 

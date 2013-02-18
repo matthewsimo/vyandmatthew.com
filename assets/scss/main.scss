@@ -1,0 +1,423 @@
+@import "compass";
+@import "normalize";
+
+* {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  *behavior:url("/assets/css/boxsizing.htc");
+  background-repeat:no-repeat;
+  position:relative;
+}
+
+img {
+  max-width:100%;height:auto;
+}
+
+body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15em;
+  color: rgb(111,111,111);
+}
+
+.clearfix {
+  zoom: 1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 400;
+}
+
+
+
+nav {
+  font-family: "proxima-nova",sans-serif;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+
+  ul, ol {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      letter-spacing: -0.03em;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(111,111,111);
+  }
+}
+
+/* @group Header */
+
+#main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background: rgb(255,255,255);
+  z-index: 10;
+  font-size: 1.1em;
+  border-bottom: 2px solid rgb(200,200,200);
+
+  .nav-control {
+    display: none;
+  }
+
+  nav {
+    width: 92%;
+    margin: .9em auto .8em;
+    text-align: center;
+
+    li {
+      padding: 0 1em;
+
+      a {
+        display: block;
+        line-height: 2em;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+
+      &:first-child img {
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+}
+
+/* end @group Header */
+
+
+
+/* @group Containers */
+
+.container-group {
+  @extend .clearfix;
+}
+
+.full-container, .half-container {
+  position: relative;
+}
+
+.full-container {
+  width: 100%;
+}
+
+.half-container {
+  width: 50%;
+  float: left;
+  
+  &:first-child {
+    padding-right: 2%;
+  }
+
+  &:last-child {
+    padding-left: 2%;
+  }
+}
+
+/* end @group Containers */
+
+
+/* @group Slide styles */
+
+.panel {
+  position: fixed;
+  overflow: hidden;
+  background: rgb(235,235,235);
+  width: 100%;
+  height: 100%;
+  padding: 6em 5% 5%;
+  z-index: 1;
+  display: none;
+  @include box-shadow( rgb(111,111,111) 0 0 10px);
+
+  > header {
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+.button {
+  display: block;
+  padding: .5em 1em;
+  background: rgb(255,255,255);
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: lighter;
+  @include border-radius(3px);
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(111,111,111);
+
+  &:hover {
+    background: rgb(83,83,83);
+    color: rgb(240,240,240);
+  }
+}
+
+
+#announcing {
+  z-index:5;
+  display: block;
+
+  h1 {
+    margin: 0 0 .4em 0;
+    line-height: 0.85;
+
+    .char4 {
+      color: rgb(253,223,104);
+      font-size: 1.2em !important;
+    }
+  }
+
+  p {
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 0;
+    text-align: left;
+  }
+
+}
+
+#the-couple {
+  background: rgb(77,77,77) url("/assets/img/about-background.png") no-repeat top right fixed;
+
+  h1 {
+    padding-top: 100px;
+    background: transparent url("/assets/img/flourish-about.png") no-repeat top center scroll;
+    color: rgb(253,223,104);
+    margin-top: 0;
+  } 
+
+  article {
+    font-size: 1.15em;
+    font-weight: lighter;
+    line-height: 1.7em;
+    color: rgb(241,241,241);
+    @include text-shadow(black 1px 1px 1px);
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+#wedding-party {
+  background: rgb(253,223,103);
+
+  h3.list-title {
+    display: none;
+  }
+
+  h1 {
+    padding-top: 120px;
+    background: transparent url("/assets/img/flourish-wedding-party.png") no-repeat top center scroll;
+    color: rgb(83,83,83);
+    margin-bottom: .25em;
+  }
+
+  nav.tabs {
+    text-align: center;
+    ul {
+      font-size: 0;
+    }
+
+    li {
+      padding: 8px 10px 4px;
+      margin: 0;
+      font-size: 14px;
+      border-bottom: 1px solid rgb(83,83,83);
+      width: 70px;
+      text-align: left;
+    }
+
+    li:first-child {
+      border-right: 1px solid rgb(83,83,83);
+      text-align: right;
+    }
+
+    a {
+      opacity: .8;
+
+      &.active, &:hover {
+        color: rgb(83,83,83);
+        opacity: 1;
+      }
+
+    }
+
+  }
+
+  ol {
+    @extend .clearfix;
+    list-style: none;
+    padding: 0;
+
+    &#his {
+      display: none;
+    }
+
+    li {
+      width: 23%;
+      height: auto;
+      float: left;
+      margin: 1%;
+
+      img {
+        max-width: 280px;
+        max-height: 280px;
+        width: 100%;
+        height: auto;
+        border: 10px solid white;
+        @include border-radius(3px);
+        cursor: pointer;
+
+        &.on {
+          border-color: rgb(83,83,83);
+        }
+      }
+
+      > div {
+        display: none;
+
+        font-family: "proxima-nova",sans-serif;
+        font-weight: lighter;
+        padding: 10px;
+        width: 170%;
+        overflow: visible;
+
+        &.on {
+          display: block;
+        }
+      }
+
+      &:nth-child(4) > div {
+        position: relative;
+        right: 70%;
+      }
+
+      h2, h3 {
+        font-size: 1.4em;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+      }
+
+      h3 {
+        font-size: 1em;
+      }
+
+
+    }
+
+  }
+
+
+}
+
+#ceremony {
+  background: rgb(117,117,117);
+  color: rgb(241,241,241);
+
+  h1 {
+    padding-top: 120px;
+    background: transparent url("/assets/img/flourish-ceremony.png") no-repeat top center scroll;
+    color: rgb(253,223,104);
+  }
+
+  #map, iframe {
+    width: 100%;
+    height: 15em;
+  }
+
+  .button {
+    margin-top: 2.92em;
+    max-width: 300px;
+  }
+
+  address {
+    margin: 1em 0;
+  }
+
+
+}
+
+#registry {
+  background: rgb(235,235,235);
+  color: rgb(62,62,62);
+
+  h4 {
+    padding-bottom: 90px;
+    text-align: center;
+    font-family: "proxima-nova",sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    background: transparent url("/assets/img/flourish-registry.png") no-repeat bottom center scroll;
+  }
+
+  ul {
+    @extend .clearfix;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  li {
+    margin: 0 0 1em;
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+
+    a {
+      position: relative;
+      max-width: 300px;
+    }
+
+
+    &:last-child {
+        width: 30%;
+        padding-left: 8%;
+    }
+
+    &:first-child a {
+      top: 4em;
+    }
+
+  }
+
+
+}
+
+@import "responsive";

@@ -78,8 +78,12 @@ nav {
   font-size: 1.1em;
   border-bottom: 2px solid rgb(200,200,200);
 
+  .nav-control {
+    display: none;
+  }
+
   nav {
-    width: 80%;
+    width: 92%;
     margin: .9em auto .8em;
     text-align: center;
 
@@ -148,7 +152,7 @@ nav {
   background: rgb(235,235,235);
   width: 100%;
   height: 100%;
-  padding: 6em 10% 10%;
+  padding: 6em 5% 5%;
   z-index: 1;
   display: none;
   @include box-shadow( rgb(111,111,111) 0 0 10px);
@@ -162,6 +166,24 @@ nav {
   }
 }
 
+.button {
+  display: block;
+  padding: .5em 1em;
+  background: rgb(255,255,255);
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: lighter;
+  @include border-radius(3px);
+  margin-bottom: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(111,111,111);
+
+  &:hover {
+    background: rgb(83,83,83);
+    color: rgb(240,240,240);
+  }
+}
 
 
 #announcing {
@@ -172,7 +194,7 @@ nav {
     margin: 0 0 .4em 0;
     line-height: 0.85;
 
-    .char9 {
+    .char4 {
       color: rgb(253,223,104);
       font-size: 1.2em !important;
     }
@@ -183,21 +205,9 @@ nav {
     font-style: italic;
     font-weight: lighter;
     margin-top: 0;
+    text-align: left;
   }
 
-  .button {
-    display: block;
-    padding: .5em 1em;
-    background: rgb(255,255,255);
-    font-size: 1.5em;
-    font-style: italic;
-    font-weight: lighter;
-    @include border-radius(3px);
-    margin-bottom: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(111,111,111);
-  }
 }
 
 #the-couple {
@@ -215,7 +225,8 @@ nav {
     font-weight: lighter;
     line-height: 1.7em;
     color: rgb(241,241,241);
-    width: 75%;
+    @include text-shadow(black 1px 1px 1px);
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -223,6 +234,10 @@ nav {
 
 #wedding-party {
   background: rgb(253,223,103);
+
+  h3.list-title {
+    display: none;
+  }
 
   h1 {
     padding-top: 120px;
@@ -286,6 +301,10 @@ nav {
         border: 10px solid white;
         @include border-radius(3px);
         cursor: pointer;
+
+        &.on {
+          border-color: rgb(83,83,83);
+        }
       }
 
       > div {
@@ -294,9 +313,17 @@ nav {
         font-family: "proxima-nova",sans-serif;
         font-weight: lighter;
         padding: 10px;
-        width: auto;
+        width: 170%;
         overflow: visible;
 
+        &.on {
+          display: block;
+        }
+      }
+
+      &:nth-child(4) > div {
+        position: relative;
+        right: 70%;
       }
 
       h2, h3 {
@@ -320,12 +347,28 @@ nav {
 
 #ceremony {
   background: rgb(117,117,117);
+  color: rgb(241,241,241);
 
   h1 {
     padding-top: 120px;
     background: transparent url("/assets/img/flourish-ceremony.png") no-repeat top center scroll;
     color: rgb(253,223,104);
   }
+
+  #map, iframe {
+    width: 100%;
+    height: 15em;
+  }
+
+  .button {
+    margin-top: 2.92em;
+    max-width: 300px;
+  }
+
+  address {
+    margin: 1em 0;
+  }
+
 
 }
 
@@ -342,4 +385,39 @@ nav {
     background: transparent url("/assets/img/flourish-registry.png") no-repeat bottom center scroll;
   }
 
+  ul {
+    @extend .clearfix;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  li {
+    margin: 0 0 1em;
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+
+    a {
+      position: relative;
+      max-width: 300px;
+    }
+
+
+    &:last-child {
+        width: 30%;
+        padding-left: 8%;
+    }
+
+    &:first-child a {
+      top: 4em;
+    }
+
+  }
+
+
 }
+
+@import "responsive";

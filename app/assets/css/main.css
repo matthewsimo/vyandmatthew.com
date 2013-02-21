@@ -869,32 +869,53 @@ nav a {
   color: #f1f1f1;
 }
 /* line 352, ../scss/main.scss */
+#ceremony p a {
+  color: #fddf68;
+}
+/* line 354, ../scss/main.scss */
+#ceremony p a:hover {
+  color: #322c14;
+}
+/* line 359, ../scss/main.scss */
 #ceremony h1 {
   padding-top: 120px;
   background: transparent url("/assets/img/flourish-ceremony.png") no-repeat top center scroll;
   color: #fddf68;
 }
-/* line 358, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
+#ceremony h4 {
+  margin: 0;
+  font-style: italic;
+}
+/* line 370, ../scss/main.scss */
+#ceremony h4 + p {
+  margin-top: 0;
+}
+/* line 374, ../scss/main.scss */
+#ceremony p {
+  font-size: .85em;
+}
+/* line 378, ../scss/main.scss */
 #ceremony #map, #ceremony iframe {
   width: 100%;
   height: 15em;
 }
-/* line 363, ../scss/main.scss */
+/* line 383, ../scss/main.scss */
 #ceremony .button {
   margin-top: 2.92em;
   max-width: 300px;
 }
-/* line 368, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 #ceremony address {
   margin: 1em 0;
 }
 
-/* line 375, ../scss/main.scss */
+/* line 395, ../scss/main.scss */
 #registry {
   background: #ebebeb;
   color: #3e3e3e;
 }
-/* line 379, ../scss/main.scss */
+/* line 399, ../scss/main.scss */
 #registry h4 {
   padding-bottom: 90px;
   text-align: center;
@@ -903,7 +924,7 @@ nav a {
   font-weight: 400;
   background: transparent url("/assets/img/flourish-registry.png") no-repeat bottom center scroll;
 }
-/* line 388, ../scss/main.scss */
+/* line 408, ../scss/main.scss */
 #registry ul {
   text-align: center;
   list-style: none;
@@ -911,24 +932,24 @@ nav a {
   margin: 0 auto;
   width: 80%;
 }
-/* line 397, ../scss/main.scss */
+/* line 417, ../scss/main.scss */
 #registry li {
   margin: 0 0 1em;
   float: left;
   width: 46%;
   margin: 0 2%;
 }
-/* line 403, ../scss/main.scss */
+/* line 423, ../scss/main.scss */
 #registry li a {
   position: relative;
   max-width: 300px;
 }
-/* line 409, ../scss/main.scss */
+/* line 429, ../scss/main.scss */
 #registry li:last-child {
   width: 30%;
   padding-left: 8%;
 }
-/* line 414, ../scss/main.scss */
+/* line 434, ../scss/main.scss */
 #registry li:first-child a {
   top: 4em;
 }

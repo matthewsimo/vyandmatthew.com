@@ -349,10 +349,30 @@ nav {
   background: rgb(117,117,117);
   color: rgb(241,241,241);
 
+  p a {
+    color: rgb(253,223,104); 
+    &:hover {
+      color: mix(black, rgb(253,223,104), 80%);
+    }
+  }
+
   h1 {
     padding-top: 120px;
     background: transparent url("/assets/img/flourish-ceremony.png") no-repeat top center scroll;
     color: rgb(253,223,104);
+  }
+
+  h4 {
+    margin: 0;
+    font-style: italic;
+  }
+
+  h4 + p {
+    margin-top: 0;
+  }
+
+  p {
+    font-size: .85em;
   }
 
   #map, iframe {

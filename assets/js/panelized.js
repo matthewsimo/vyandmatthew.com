@@ -90,7 +90,7 @@ var methods = {
     var panelizedObj = $('#main-content').data('panelized');
 
     if(setVal !== undefined) {
-      console.log(setVal);
+      // console.log(setVal);
       panelizedObj.isScrolling = setVal;      
       $('#main-content').data('panelized', panelizedObj);
     } else {
